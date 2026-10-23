@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+ 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #002fff;
+    gap: 5px;
+
+    a {
+       align-items: center;
+       display: flex; 
+    }
+}
+
+.logotipo {
+    padding: 5px;
+    border-radius: 20%;
+    width: 80px;
+    height: 80px;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Calibri', 'Arial', sans-serif;
+    color: #ffffff;
+    
+    background: linear-gradient(-45deg, #001233, #002d72, #0056e0, #e84910);
+    background-size: 400% 400%;
+    animation: fundoAnimado 10s ease infinite;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;                     
+    justify-content: center;   
+    align-items: center;      
+    text-align: center;        
+    
+    padding: 60px 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@keyframes fundoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+.botao-senai {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #0054a6 0%, #003366 100%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 84, 166, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.botao-senai:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ffca05 0%, #d8a800 100%);
+    color: #000000;
+    border-color: #0054a6;
+    box-shadow: 0 6px 20px rgba(255, 202, 5, 0.6);
+}
+
+.botao-senai:active {
+    transform: scale(0.98);
+}
